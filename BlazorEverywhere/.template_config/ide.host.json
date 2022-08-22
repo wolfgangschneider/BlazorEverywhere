@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "order": 0,
+  "icon": "icon-192.png",
+  "symbolInfo": [
+    {
+      "id": "Test1",
+      "name": {
+        "text": "This is a test for further using ide"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "Test2",
+      "name": {
+        "text": "This is a test for further using IDE"
+      },
+      "isVisible": true
+    }
+  ]
+}

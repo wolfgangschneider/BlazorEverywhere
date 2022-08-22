@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "EasyByte",
+  "classifications": [ "Web", "Blazor", "WebAssembly", "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "Windows" ],
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "identity": "BlazorEverywhereTemplate",
+  "name": "Blazor Everywhere Template",
+  "shortName": "blazor-everywhere",
+  "sourceName": "Tpl",
+  "symbols": {
+    "Test1": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "This is a test for further using",
+      "defaultValue": "false"
+    },
+    "Test2": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "This is a test for further using",
+      "defaultValue": "Hello Web",
+      "replaces": "Sayed Web"
+    }
+  },
+
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ "src/.vs/**", ".template_config/**" ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿@page "/HardwhareInfo"
+
+@inject Tpl.Core.Interfaces.IHardWhare HW
+
+
+@inject Microsoft.JSInterop.IJSRuntime JSRunntime
+
+    <div>
+        <p>*OS :  @_Os; </p>
+        <p>*Is Browser: @HW.IsBrowser</p>
+        <button @onclick='(() => Prompt("Message"))'>CallJS</button>
+    
+    </div>
+
+@code {
+   
+    string _Os = string.Empty;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _Os = await HW.GetOs();
+            StateHasChanged();
+        }
+    }
+   
+    private async Task Prompt(string msg)
+    {
+        ExampleJsInterop ExampleJsInterop = new(JSRunntime);
+        await ExampleJsInterop.Prompt(msg);
+
+    }
+   
+}
+
