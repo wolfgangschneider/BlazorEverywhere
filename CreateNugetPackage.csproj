@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <Language>C#</Language>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>.</PackageOutputPath>  
+  </PropertyGroup>
+
+  <ItemGroup>
+  <Content Include="BlazorEverywhere\Tpl.sln;BlazorEverywhere\src\**\*;BlazorEverywhere\.template_config\**\*" Exclude="**\bin\**\*;**\obj\**\*;**\.vs\**\*;**\.git\**\*;**\package\**\*" />
+  <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="CreateNugetPackage.cmd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <Language>C#</Language>
+    <Summary>A ready-to-use template for one BlazorApp hosted in Blazor-Server Blazor-WASM and Blazor-Hybrid</Summary>
+    <PackageType>Template</PackageType>
+    <ReleaseNotes>Initial Release</ReleaseNotes>
+    <Version>1.0.4-preview.5</Version>
+    <PackageId>blazor-everywhere</PackageId>
+    <Title>Blazor Everywhere Template</Title>
+    <Company>EasyByte.at</Company>
+    <Authors>Wolfgang Schneider</Authors>
+    <Copyright>EasyByte.at © 2022</Copyright>
+    <Description>A ready-to-use template for one BlazorApp hosted in Blazor-Server Blazor-WASM and Blazor-Hybrid</Description>
+    <PackageTags>c#;blazor;core;template;web</PackageTags>
+    <PackageCopyright>EasyByte.at © 2022</PackageCopyright>
+    <PackageProjectUrl>https://github.com/wolfgangschneider/BlazorEverywhere</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/wolfgangschneider/BlazorEverywhere</RepositoryUrl>
+  </PropertyGroup>
+</Project>
