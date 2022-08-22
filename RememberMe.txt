@@ -1,1 +1,1 @@
-Get-ChildItem .\ -include bin,obj -Recurse -Force| foreach ($_) { remove-item $_.fullname -Force -Recurse }
+Get-ChildItem .\ -include bin,obj,.git -Recurse -Force| foreach ($_) { remove-item $_.fullname -Force -Recurse }
