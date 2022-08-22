@@ -1,6 +1,5 @@
 ﻿using Tpl.Core.Services;
 using Tpl.Maui.InterfacesIpl;
-
 using Tpl.Core.Interfaces;
 
 namespace Tpl.Maui;

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="BlazorEverywhere\.editorconfig" />
     <None Include="CreateNugetPackage.cmd" />
   </ItemGroup>
   <PropertyGroup>
@@ -34,7 +35,7 @@
     <PackageTags>c#;blazor;core;template;web</PackageTags>
     <PackageCopyright>EasyByte.at © 2022</PackageCopyright>
     <PackageProjectUrl>https://github.com/wolfgangschneider/BlazorEverywhere</PackageProjectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/wolfgangschneider/BlazorEverywhere</RepositoryUrl>
   </PropertyGroup>
