@@ -18,7 +18,7 @@
 * From nuget.org https://www.nuget.org/packages/blazor-everywhere/  
   **dotnet new --install blazor-everywhere**
 
-* From GitHub Version. Download blazor-everywhere{version}.nupkg from https://github.com/wolfgangschneider/BlazorEverywhere/releases/tag/Blazor  
+* From GitHub Version. Download blazor-everywhere{version}.nupkg from https://github.com/wolfgangschneider/BlazorEverywhere/releases/tag/blazor-everywhere.7.0.0
   **dotnet new --install {Download blazor-everywhere{version}.nupkg}**
 
 # How to use
