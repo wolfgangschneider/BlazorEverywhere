@@ -1,4 +1,5 @@
-﻿using Tpl.Core.Services;
+﻿using Microsoft.Extensions.Logging;
+using Tpl.Core.Services;
 using Tpl.Maui.InterfacesIpl;
 using Tpl.Core.Interfaces;
 
@@ -17,18 +18,16 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
-		#if DEBUG
+#if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Logging.AddDebug();
 #endif
         builder.Services.AddHttpClient("Test", configureClient => configureClient.BaseAddress = new Uri(@"https://localhost:7257"/*builder.HostEnvironment.BaseAddress*/));
 
         builder.Services.AddSingleton<WeatherForecastService>();
         builder.Services.AddSingleton<WeatherForecastServiceApi>();
 
-        //unfortunately it seams there is an Error in Maui net6 lo load JS Isolation 
-        //https://github.com/dotnet/maui/discussions/6468
-        //builder.Services.AddSingleton<IHardWhare, Core.InterfacesIpl.HardWhare>();
-        //but luckily we can provide a an IHardWhare Maui Implementation
+        //builder.Services.AddScoped<IHardWhare, Core.InterfacesIpl.HardWhare>();
         builder.Services.AddSingleton<IHardWhare, MauiHardWhare>();
 
         return builder.Build();
