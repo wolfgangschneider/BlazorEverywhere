@@ -58,6 +58,11 @@
             * *Controllers*
             * *Properties*
          * **Tpl.WebApi.Shared.Data**
-# To Do
+
+# Work in Progress
 * Describe Project folders
+
+##### ASP.NET Core Blazor project structure (Server & WASM)
+https://learn.microsoft.com/en-us/aspnet/core/blazor/project-structure?view=aspnetcore-7.0
+# To Do
 * Comment Code and explain how it works
