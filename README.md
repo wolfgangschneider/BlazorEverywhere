@@ -1,7 +1,7 @@
 # BlazorEverywhere
  A ready-to-use template for one BlazorApp hosted in Blazor-Server Blazor-WASM and Blazor-Hybrid
 # Goals
-* Crate a Template you can use, singe code to create 
+* Crate a Template you can use, single code to create 
    * Blazor-Server
    * Blazor-WASM
    * Blazor-Hybrid (Maui Blazor App)
