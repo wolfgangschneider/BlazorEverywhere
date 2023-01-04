@@ -1,7 +1,7 @@
 # BlazorEverywhere
  A ready-to-use template for one BlazorApp hosted in Blazor-Server Blazor-WASM and Blazor-Hybrid
 # Goals
-* Crate a Template to can use singe code to create 
+* Crate a Template you can use, singe code to create 
    * Blazor-Server
    * Blazor-WASM
    * Blazor-Hybrid (Maui Blazor App)
@@ -25,6 +25,39 @@
   
   dotnet new blazor-everywhere
 
+# Project structure
+
+* **Root**
+   * **Blazor Everywhere** 
+      * .template_configuration
+      *  **src**
+          *  **HostingModels**
+             *  **BlazorHybrid**
+               *  **InterfacesIpl**
+               *  *Platforms*
+                  *  *Android*
+                  *  *iOS*
+                  * *MacCatalyst*
+                  * *Tizen*
+                  * *Windows*
+                * *Properties*
+                * *Resources*
+                * *wwwroot*
+            *  **BlazorServer**
+            * **BlazorWasm**
+         *  **Tpl.Core**
+            * **Components**
+            * **Interfaces**
+            * **InterfacesIpl**
+            * *Pages*
+            * *Services*
+            * *Shared*
+            * *wwwroot*
+               * *css* 
+         *  **Tpl.WebApi**
+            * *Controllers*
+            * *Properties*
+         * **Tpl.WebApi.Shared.Data**
 # To Do
-* Describe Project structure
+* Describe Project folders
 * Comment Code and explain how it works
