@@ -64,5 +64,10 @@
 
 ##### ASP.NET Core Blazor project structure (Server & WASM)
 https://learn.microsoft.com/en-us/aspnet/core/blazor/project-structure?view=aspnetcore-7.0
+
+###### Blazor Hybrid with .NET MAUI project structure and startup
+https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/3-exercise-configure-environment
+> ###### Target multiple platforms from .NET MAUI single project
+> https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/single-project?view=net-maui-7.0
 # To Do
 * Comment Code and explain how it works
